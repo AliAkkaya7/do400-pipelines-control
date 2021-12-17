@@ -6,7 +6,7 @@ label 'nodejs'
 }
 stages {
 stage('Run Tests') {
-parallel2 {
+parallel {
 stage('Backend Tests') {
 steps {
 sh 'node ./backend/test.js'
